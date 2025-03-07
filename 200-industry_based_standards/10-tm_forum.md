@@ -1,27 +1,25 @@
-# TM Forum's Information Framework and Its Relationship to Data Modeling Techniques and Tools
+# TM Forum's Information Framework
 
 ## Introduction
 
-The TM Forum's Information Framework (SID, eTOM, and TAM) is a comprehensive set of standards and guidelines for the telecommunications industry. These components are closely related to the data modeling techniques and tools discussed in the other documents in this repository. Here's how they are co-related:
+- The TM Forum's Information Framework (SID, eTOM, and TAM) is a comprehensive set of standards and guidelines for the telecommunications industry.
+- These components are closely related to the data modeling [techniques](../100-data_modeling_techniques) and [tools](../120-data_modeling_tools) discussed in the other folders in this repository.
+- Here's how they are co-related:
+  - **SID (Shared Information/Data Model):**
+    - Primarily based on UML and entity-relationship concepts.
+    - Uses a hierarchical information model that can be implemented in relational databases.
+    - Often used for telecommunications data modeling that gets implemented in SQL databases.
+  - **eTOM (Enhanced Telecom Operations Map):**
+    - Provides a comprehensive business process framework.
+    - Can be mapped to various data modeling techniques to ensure that data models support business processes effectively.
+  - **TAM (Telecom Applications Map):**
+    - Blueprints application alignment with business functions.
+    - Ensures that data models are aligned with the applications that use them.
+  - **Open Digital Architecture (ODA) and TM Forum Open APIs:**
+    - Facilitate the integration and interoperability of different systems and applications.
+    - Ensure that data models are compatible with industry standards and can be easily integrated with other systems.
 
-- **SID (Shared Information/Data Model):**
-  - Primarily based on UML and entity-relationship concepts.
-  - Uses a hierarchical information model that can be implemented in relational databases.
-  - Often used for telecommunications data modeling that gets implemented in SQL databases.
-
-- **eTOM (Enhanced Telecom Operations Map):**
-  - Provides a comprehensive business process framework.
-  - Can be mapped to various data modeling techniques to ensure that data models support business processes effectively.
-
-- **TAM (Telecom Applications Map):**
-  - Blueprints application alignment with business functions.
-  - Ensures that data models are aligned with the applications that use them.
-
-- **Open Digital Architecture (ODA) and TM Forum Open APIs:**
-  - Facilitate the integration and interoperability of different systems and applications.
-  - Ensure that data models are compatible with industry standards and can be easily integrated with other systems.
-
-# In this Document
+## In this Document
 
 - **This document explains**
   - TM Forum's Information Framework components (SID, eTOM, and TAM)
@@ -39,13 +37,13 @@ The TM Forum's Information Framework (SID, eTOM, and TAM) is a comprehensive set
     - TAM
   - ODA and Open APIs
 
-# Introduction to TM Forum
+## Introduction to TM Forum
 
 - TM Forum drives digital transformation in telecommunications.
 - It provides industry-standard frameworks, tools, and best practices for service providers and suppliers in the telecom/digital services industry.
 - It helps organizations modernize systems, ensure business continuity, and reduce risks during digital transformation.
 
-# TM Forum - Information Framework
+## TM Forum - Information Framework
 
 - **About the Information Framework**
   - TM Forum offers industry-standard frameworks for integrated management of telecom operations and IT infrastructure.
@@ -57,7 +55,7 @@ The TM Forum's Information Framework (SID, eTOM, and TAM) is a comprehensive set
   - Access the Information Framework [here](https://www.tmforum.org/oda/moda/)
   - ![](/assets/tm_forum-01.png)
 
-## Integration of SID, eTOM, and TAM
+### Integration of SID, eTOM, and TAM
 
 - **Together, SID, eTOM, and TAM provide a comprehensive view of telecom operations**
   - eTOM defines processes
@@ -70,7 +68,7 @@ The TM Forum's Information Framework (SID, eTOM, and TAM) is a comprehensive set
 - **eTOM**
   - Defines processes that TAM applications implement
 
-## Analogy using Data Modeling Levels
+### Analogy using Data Modeling Levels
 
 - **Conceptual Data Model**
   - Focuses on the "big picture": what entities exist and how they relate.
@@ -88,7 +86,7 @@ The TM Forum's Information Framework (SID, eTOM, and TAM) is a comprehensive set
 | **Logical**     | **eTOM**                        | Defines HOW the business operates (business processes and operational workflows)      |
 | **Physical**    | **TAM**                         | Defines WHAT application capabilities are needed (application functions and features) |
 
-## SID
+### SID
 
 - **What is SID?**
   - A standardized data model for the telecommunications industry.
@@ -178,7 +176,7 @@ graph TD
 | **Class**         | Often used interchangeably with Entity, sometimes more abstract. | "Blueprint" (in object-oriented terms) | CustomerBillingAccount (concrete entity in the diagram)                        |
 | **Aggregate**     | Collection of related Entities treated as a unit.                | "Document with embedded sections"      | CustomerBillingAccount with related entities and connections                   |
 
-## eTOM
+### eTOM
 
 - **What is eTOM?**
   - `Definition`
@@ -255,7 +253,7 @@ graph TD
 | eTOM Level 3 Process Grouping | Group of related processes within a Level 2 area      | "Section within a Division"        | Manage Customer Order Placement, Manage Customer Order Fulfillment |
 | eTOM Level 4 Process          | Specific set of activities to achieve a business goal | "Process/Task"                     | Capture Customer Order, Issue Customer Order                       |
 
-## TAM
+### TAM
 
 - **What is TAM?**
   - `Definition`
@@ -326,7 +324,7 @@ graph TD
 | TAM Level 2 Application Area | More specific functional grouping of applications within a Level 1 Area | "Application Functional Area" | Customer Order Management, Customer Information Management |
 | TAM Application              | Specific software system or functional module                           | "Software Application/Module" | Customer Order Acceptance, Customer Order Enrichment       |
 
-# TM Forum - ODA and Open APIs
+## TM Forum - ODA and Open APIs
 
 - Information Framework provides the `conceptual foundation` for telecom operations.
 - TM Forum further promotes interoperability and agility through standardized APIs and data models
@@ -335,7 +333,7 @@ graph TD
   - `Open APIs`
 - Next sections will cover these two topics in detail.
 
-## Open Digital Architecture (ODA)
+### Open Digital Architecture (ODA)
 
 - **What is ODA?**
   - Provides a framework for integrating various systems and applications within the telecom ecosystem.
@@ -346,7 +344,7 @@ graph TD
   - Find it [here](https://www.tmforum.org/oda/)
   - ![](/assets/tm_forum-14.png)
 
-## TM Forum Open APIs
+### TM Forum Open APIs
 
 - **What are Open APIs?**
   - TM Forum Open APIs are standardized REST APIs with JSON payloads specifically designed for telecom operations.

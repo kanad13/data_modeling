@@ -2,42 +2,37 @@
 
 ## Overview of the Repository
 
-This repository serves as an introduction to the topic of data modeling. It contains documents that provide insights into various data modeling techniques, tools, and industry standards.
+- This repository serves as an introduction to the topic of data modeling.
+- It contains documents that provide insights into various data modeling techniques, tools, and industry standards.
 
-## Purpose of Each Document
+## Topics Covered
 
-1. [100-data_modeling_techniques.md](./100-data_modeling_techniques.md)
-   - **Purpose:** Introduces the concept of data modeling and delves into various techniques such as relational data modeling, graph data modeling, semantic data modeling (RDF, RDFS, OWL, SHACL), and Document Databases & JSON-based Modeling.
-   - **Link:** [100-data_modeling_techniques.md](./100-data_modeling_techniques.md)
-
-2. [120-data_modeling_tools.md](./120-data_modeling_tools.md)
-   - **Purpose:** Provides an overview of various data modeling tools available for different types of data models.
-   - **Link:** [120-data_modeling_tools.md](./120-data_modeling_tools.md)
-
-3. [200-tm_forum.md](./200-tm_forum.md)
-   - **Purpose:** Contains details about TM Forum's Information Framework components (SID, eTOM, and TAM), and how these components work together, about Open Digital Architecture (ODA) and TM Forum Open APIs.
-   - **Link:** [200-tm_forum.md](./200-tm_forum.md)
-
-## Navigation
+- **Click on any of the links in the boxes to explore the respective topics**:
 
 ```mermaid
 graph LR
+    %% Main node
     DM[Data Modeling Approaches]
-    RDM[Relational]
-    GDM[Graph]
-    SDM[Semantic]
-    DDM[Document-oriented]
 
+    %% Main approaches
+    RDM[Relational Data Modeling]
+    GDM[Graph Data Modeling]
+    SDM[Semantic Data Modeling]
+    DDM[Document-oriented Data Modeling]
+
+    %% First level connections
     DM --> RDM
     DM --> GDM
     DM --> SDM
     DM --> DDM
 
+    %% Implementations
     RDM --> Tables[Tables & SQL]
     GDM --> NodesEdges[Nodes & Edges]
     SDM --> Triples[RDF Triples]
     DDM --> Documents[JSON Documents]
 
+    %% Tools and Technologies
     Tables --> ERTools[ER Diagram Tools]
     Tables --> UMLTools[UML Tools]
     Tables --> TMFSID[TMForum SID]
@@ -45,15 +40,39 @@ graph LR
     Triples --> SemanticTools[Semantic Web Tools]
     Documents --> DocumentTools[Document DB Tools]
 
+    %% Semantic Data Modeling specifics
+    SDM --> RDF[RDF - Resource Description Framework]
+    SDM --> RDFS[RDFS - RDF Schema]
+    SDM --> OWL[OWL - Web Ontology Language]
+    SDM --> SHACL[SHACL - Shapes Constraint Language]
+    OWL --> SHACL
+    SHACL --> Validation[Validation & Data Quality]
+
+    %% Styling main node
     style DM fill:#ffec5c,stroke:#555,stroke-width:2px
-    style RDM fill:#f9f,stroke:#333,stroke-width:1px
-    style GDM fill:#ccf,stroke:#333,stroke-width:1px
-    style SDM fill:#cfc,stroke:#333,stroke-width:1px
-    style DDM fill:#fcc,stroke:#333,stroke-width:1px
 
-    classDef approachStyle fill:#eee,stroke:#333,stroke-width:1px
-    class RDM,GDM,SDM,DDM approachStyle
+    %% Level 1 - Main approach nodes (darker shades)
+    style RDM fill:#d580ff,stroke:#333,stroke-width:1px
+    style GDM fill:#8080ff,stroke:#333,stroke-width:1px
+    style SDM fill:#80d580,stroke:#333,stroke-width:1px
+    style DDM fill:#ff8080,stroke:#333,stroke-width:1px
 
-    classDef toolStyle fill:#e1e1e1,stroke:#555,stroke-width:1px
-    class ERTools,UMLTools,GraphTools,SemanticTools,DocumentTools,TMFSID toolStyle
+    %% Level 2 - Implementation nodes (medium shades)
+    style Tables fill:#e6b3ff,stroke:#333,stroke-width:1px
+    style NodesEdges fill:#b3b3ff,stroke:#333,stroke-width:1px
+    style Triples fill:#b3e6b3,stroke:#333,stroke-width:1px
+    style Documents fill:#ffb3b3,stroke:#333,stroke-width:1px
+    style RDF fill:#b3e6b3,stroke:#333,stroke-width:1px
+    style RDFS fill:#b3e6b3,stroke:#333,stroke-width:1px
+    style OWL fill:#b3e6b3,stroke:#333,stroke-width:1px
+    style SHACL fill:#b3e6b3,stroke:#333,stroke-width:1px
+
+    %% Level 3 - Tool nodes (lightest shades)
+    style ERTools fill:#f2d9ff,stroke:#333,stroke-width:1px
+    style UMLTools fill:#f2d9ff,stroke:#333,stroke-width:1px
+    style TMFSID fill:#f2d9ff,stroke:#333,stroke-width:1px
+    style GraphTools fill:#d9d9ff,stroke:#333,stroke-width:1px
+    style SemanticTools fill:#d9f2d9,stroke:#333,stroke-width:1px
+    style DocumentTools fill:#ffd9d9,stroke:#333,stroke-width:1px
+    style Validation fill:#d9f2d9,stroke:#333,stroke-width:1px
 ```
