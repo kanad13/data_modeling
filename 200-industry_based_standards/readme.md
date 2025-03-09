@@ -6,5 +6,5 @@
 
 ## Contents of This Folder
 
-- [TM Forum's Information Framework](./10-tm_forum.md)
+- [TM Forum's Information Framework](../200-domain_specific_models/10-tm_forum.md)
   - Provides details about the TM Forum's Information Framework (SID, eTOM, and TAM) and Open Digital Architecture (ODA).

@@ -53,7 +53,7 @@
   - `TAM (Telecom Applications Map)` Blueprints application alignment with business functions.
 - **Interactive Exploration**
   - Access the Information Framework [here](https://www.tmforum.org/oda/moda/)
-  - ![](/assets/tm_forum-01.png)
+  - ![](/900-assets/tm_forum-01.png)
 
 ### Integration of SID, eTOM, and TAM
 
@@ -100,7 +100,7 @@
     - Think of them as the "departments" or "subject areas" in a company.
   - `SID Context Example`
     - Customer Domain, Product Domain, Service Domain, Resource Domain
-  - ![](/assets/tm_forum-02.png)
+  - ![](/900-assets/tm_forum-02.png)
   - `SID domains`
     - SID is organized into domains, which represent major functional areas of the telecom business.
     - These domains provide a logical grouping for related business concepts.
@@ -147,7 +147,7 @@ graph TD
     - Entities are like the "nouns" in the business language.
   - `SID Context Example`
     - CustomerBillingAccount, CustomerAccount, CustomerBill (yellow boxes in diagrams)
-  - ![](/assets/tm_forum-04.png)
+  - ![](/900-assets/tm_forum-04.png)
 - **SID - Attribute**
   - `Definition`
     - A characteristic or property of an Entity, describing the data elements associated with an Entity.
@@ -155,7 +155,7 @@ graph TD
     - Attributes are like the "adjectives" that describe the "nouns" (Entities).
   - `SID Context Example`
     - creditLimit, pin in CustomerBillingAccount (listed under "Attributes" tab)
-  - ![](/assets/tm_forum-03.png)
+  - ![](/900-assets/tm_forum-03.png)
 - **SID - Relationship (or Association)**
   - `Definition`
     - A connection or link between two or more Entities, describing how Entities are related in the business context.
@@ -164,7 +164,7 @@ graph TD
   - `SID Context Example`
     - Lines connecting Entity boxes in diagrams, labeled with relationship type and cardinality.
     - CustomerBillingAccount _described by_ CustomerBill, PartyRole _plays_ Customer
-  - ![](/assets/tm_forum-04.png)
+  - ![](/900-assets/tm_forum-04.png)
 
 | Term              | Definition                                                       | Practical Analogy                      | SID Context Example                                                            |
 | ----------------- | ---------------------------------------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------ |
@@ -186,7 +186,7 @@ graph TD
     - Blueprint for Business Processes
   - `eTOM Context Example`
     - eTOM (overall structure)
-  - ![](/assets/tm_forum-05.png)
+  - ![](/900-assets/tm_forum-05.png)
 - **eTOM Level 1 Process Area**
   - `Definition`
     - Major category of business processes, representing a high-level overview of the entire business process landscape.
@@ -194,7 +194,7 @@ graph TD
     - Department
   - `eTOM Context Example`
     - Operations, Strategy, Enterprise Management
-  - ![](/assets/tm_forum-06.png)
+  - ![](/900-assets/tm_forum-06.png)
 
 ```mermaid
 graph TD
@@ -228,7 +228,7 @@ graph TD
     - Division within a Department
   - `eTOM Context Example`
     - Fulfillment, Assurance, Billing (within Operations)
-  - ![](/assets/tm_forum-07.png)
+  - ![](/900-assets/tm_forum-07.png)
 - **eTOM Level 3 Process Grouping**
   - `Definition`
     - Group of related processes within a Level 2 area, providing even more detail.
@@ -236,7 +236,7 @@ graph TD
     - "Section within a Division"
   - `eTOM Context Example`
     - Manage Customer Order Placement, Manage Customer Order Fulfillment
-  - ![](/assets/tm_forum-08.png)
+  - ![](/900-assets/tm_forum-08.png)
 - **eTOM Level 4 Process**
   - `Definition`
     - Specific set of activities to achieve a business goal, representing the most granular level of detail.
@@ -263,7 +263,7 @@ graph TD
     - "Software Catalog"
   - `TAM Context Example`
     - TAM (overall structure)
-  - ![](/assets/tm_forum-09.png)
+  - ![](/900-assets/tm_forum-09.png)
 - **TAM Level 1 Application Area (or Layers)**
   - `Definition`
     - Major category of application functionality, representing high-level application domains. These are also commonly referred to as _TAM Layers_.
@@ -271,7 +271,7 @@ graph TD
     - "Application Domain" or "Application Layer"
   - `TAM Context Example`
     - Customer-Facing Applications, Business Management Applications, Resource-Facing Applications, Infrastructure Applications (often grouped into layers)
-  - ![](/assets/tm_forum-10.png)
+  - ![](/900-assets/tm_forum-10.png)
 
 ```mermaid
 graph TD
@@ -307,7 +307,7 @@ graph TD
     - "Application Functional Area"
   - `TAM Context Example`
     - Customer Order Management, Customer Information Management
-  - ![](/assets/tm_forum-11.png)
+  - ![](/900-assets/tm_forum-11.png)
 - **TAM Application**
   - `Definition`
     - Specific software system or functional module, representing a concrete software component with a defined function.
@@ -315,7 +315,7 @@ graph TD
     - "Software Application/Module"
   - `TAM Context Example`
     - Customer Order Acceptance, Customer Order Enrichment
-  - ![](/assets/tm_forum-12.png)
+  - ![](/900-assets/tm_forum-12.png)
 
 | Term                         | Definition                                                              | Practical Analogy             | TAM Context Example                                        |
 | ---------------------------- | ----------------------------------------------------------------------- | ----------------------------- | ---------------------------------------------------------- |
@@ -339,10 +339,10 @@ graph TD
   - Provides a framework for integrating various systems and applications within the telecom ecosystem.
   - Breaks down complex systems into smaller, reusable parts.
   - It replaces traditional operations and business support systems (OSS/BSS) with a new approach that simplifies your design, modernizes your build, and automates your operation.
-  - ![](/assets/tm_forum-13.png)
+  - ![](/900-assets/tm_forum-13.png)
 - **Interactive explorer**
   - Find it [here](https://www.tmforum.org/oda/)
-  - ![](/assets/tm_forum-14.png)
+  - ![](/900-assets/tm_forum-14.png)
 
 ### TM Forum Open APIs
 
@@ -355,5 +355,5 @@ graph TD
   - `TAM Connectivity` TAM applications can connect and interact with each other through Open APIs, enabling a modular and interoperable application landscape.
 - **More details**
   - Find them [here](https://www.tmforum.org/oda/open-apis/open-api-dashboard/)
-  - ![](/assets/tm_forum-15.png)
-  - ![](/assets/tm_forum-16.png)
+  - ![](/900-assets/tm_forum-15.png)
+  - ![](/900-assets/tm_forum-16.png)
