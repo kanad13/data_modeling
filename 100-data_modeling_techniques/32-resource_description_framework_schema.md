@@ -94,7 +94,7 @@ graph TD
 :DatabaseCourse :hasTitle "Database Systems" .
 ```
 
-### Key Benefits of RDFS in This Example:
+### Key Benefits of RDFS in This Example
 
 - **Class Hierarchy:**
   - We can define that Students and Professors are subtypes of Persons.

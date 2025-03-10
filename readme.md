@@ -5,175 +5,17 @@
 - This repository serves as an introduction to the topic of data modeling.
 - It contains documents that provide insights into various data modeling techniques, tools, and industry standards.
 
-## Topics Covered
+## Interactive Diagram
 
-- **Click on any of the links in the boxes to explore the respective topics**:
-
-```mermaid
-graph LR
-    %% Main node
-    DM[Data Modeling Approaches]
-    style DM fill:#ffd60a,stroke:#333,stroke-width:2px
-
-    %% First level connections
-    DM --> RDM
-    DM --> GDM
-    DM --> SDM
-    DM --> DDM
-
-    %% Main approaches - Parent Level 1
-    RDM[Relational Data Modeling]
-    GDM[Graph Data Modeling]
-    SDM[Semantic Data Modeling]
-    DDM[Document-oriented Data Modeling]
-    style RDM fill:#ccc5b9,stroke:#333,stroke-width:1px,color:#333
-    style GDM fill:#fffcf2,stroke:#333,stroke-width:1px,color:#333
-    style SDM fill:#e5e5e5,stroke:#333,stroke-width:1px,color:#333
-    style DDM fill:#e1e5f2,stroke:#333,stroke-width:1px,color:#333
-
-    %% First level Implementations - Parent Level 2
-    Tables[Tables & SQL]
-    NodesEdges[Nodes & Edges]
-    Documents[JSON Documents]
-    RDM --> Tables
-    GDM --> NodesEdges
-    DDM --> Documents
-    style Tables fill:#e0dad5,stroke:#333,stroke-width:1px,color:#333
-    style NodesEdges fill:#fffef9,stroke:#333,stroke-width:1px,color:#333
-    style Documents fill:#f0f2f7,stroke:#333,stroke-width:1px,color:#333
-
-    %% Tools and Technologies & Semantic specifics - Parent Level 3
-    ERTools[ER Diagram Tools]
-    UMLTools[UML Tools]
-    TMFSID[TMForum SID]
-    GraphTools[Graph Database Tools]
-    DocumentTools[Document DB Tools]
-    RDF[RDF - Resource Description Framework]
-    RDFS[RDFS - RDF Schema]
-    OWL[OWL - Web Ontology Language]
-    Tables --> ERTools
-    Tables --> UMLTools
-    Tables --> TMFSID
-    NodesEdges --> GraphTools
-    Documents --> DocumentTools
-    SDM --> RDF
-    SDM --> RDFS
-    SDM --> OWL
-    style ERTools fill:#e8e4e1,stroke:#333,stroke-width:1px,color:#333
-    style UMLTools fill:#e8e4e1,stroke:#333,stroke-width:1px,color:#333
-    style TMFSID fill:#e8e4e1,stroke:#333,stroke-width:1px,color:#333
-    style GraphTools fill:#fffdf6,stroke:#333,stroke-width:1px,color:#333
-    style DocumentTools fill:#f9fafc,stroke:#333,stroke-width:1px,color:#333
-    style RDF fill:#d4d4d4,stroke:#333,stroke-width:1px,color:#333
-    style RDFS fill:#d4d4d4,stroke:#333,stroke-width:1px,color:#333
-    style OWL fill:#d4d4d4,stroke:#333,stroke-width:1px,color:#333
-
-    %% Semantic Data Modeling specifics - Deeper Level 4
-    Triples[RDF Triples]
-    SHACL[SHACL - Shapes Constraint Language]
-    RDF --> Triples
-    OWL --> SHACL
-    style Triples fill:#c2c2c2,stroke:#333,stroke-width:1px,color:#333
-    style SHACL fill:#c2c2c2,stroke:#333,stroke-width:1px,color:#333
-```
-
-## with links
+- The chart below provides a visual overview of data modeling approaches.
+- `Click on any node` to learn more about the specific topic.
 
 ```mermaid
 graph LR
     %% Main node
     DM["Data Modeling Approaches"]
-    style DM fill:#f9dc5c,stroke:#333,stroke-width:2px
-    %% style DM fill:none,stroke:#f9dc5c,stroke-width:5px
-    click DM href "https://google.com" "Click for more information"
-
-    %% First level connections
-    DM --> RDM
-    DM --> GDM
-    DM --> SDM
-    DM --> DDM
-
-    %% Main approaches - Parent Level 1
-    RDM["Relational Data Modeling"]
-    GDM["Graph Data Modeling"]
-    SDM["Semantic Data Modeling"]
-    DDM["Document-oriented Data Modeling"]
-    style RDM fill:none,stroke:#e74c3c,stroke-width:2px
-    style GDM fill:none,stroke:#3498db,stroke-width:2px
-    style SDM fill:none,stroke:#2ecc71,stroke-width:2px
-    style DDM fill:none,stroke:#9b59b6,stroke-width:2px
-    click RDM href "https://google.com" "Click for more information"
-    click GDM href "https://google.com" "Click for more information"
-    click SDM href "https://google.com" "Click for more information"
-    click DDM href "https://google.com" "Click for more information"
-
-    %% First level Implementations - Parent Level 2
-    Tables["Tables & SQL"]
-    NodesEdges["Nodes & Edges"]
-    Documents["JSON Documents"]
-    RDM --> Tables
-    GDM --> NodesEdges
-    DDM --> Documents
-    style Tables fill:none,stroke:#e74c3c,stroke-width:2px
-    style NodesEdges fill:none,stroke:#3498db,stroke-width:2px
-    style Documents fill:none,stroke:#9b59b6,stroke-width:2px
-    click Tables href "https://google.com" "Click for more information"
-    click NodesEdges href "https://google.com" "Click for more information"
-    click Documents href "https://google.com" "Click for more information"
-
-    %% Tools and Technologies & Semantic specifics - Parent Level 3
-    ERTools["ER Diagram Tools"]
-    UMLTools["UML Tools"]
-    TMFSID["TMForum SID"]
-    GraphTools["Graph Database Tools"]
-    DocumentTools["Document DB Tools"]
-    RDF["RDF - Resource Description Framework"]
-    RDFS["RDFS - RDF Schema"]
-    OWL["OWL - Web Ontology Language"]
-    Tables --> ERTools
-    Tables --> UMLTools
-    Tables --> TMFSID
-    NodesEdges --> GraphTools
-    Documents --> DocumentTools
-    SDM --> RDF
-    SDM --> RDFS
-    SDM --> OWL
-    style ERTools fill:none,stroke:#e74c3c,stroke-width:2px
-    style UMLTools fill:none,stroke:#e74c3c,stroke-width:2px
-    style TMFSID fill:none,stroke:#e74c3c,stroke-width:2px
-    style GraphTools fill:none,stroke:#3498db,stroke-width:2px
-    style DocumentTools fill:none,stroke:#9b59b6,stroke-width:2px
-    style RDF fill:none,stroke:#2ecc71,stroke-width:2px
-    style RDFS fill:none,stroke:#2ecc71,stroke-width:2px
-    style OWL fill:none,stroke:#2ecc71,stroke-width:2px
-    click ERTools href "https://google.com" "Click for more information"
-    click UMLTools href "https://google.com" "Click for more information"
-    click TMFSID href "https://google.com" "Click for more information"
-    click GraphTools href "https://google.com" "Click for more information"
-    click DocumentTools href "https://google.com" "Click for more information"
-    click RDF href "https://google.com" "Click for more information"
-    click RDFS href "https://google.com" "Click for more information"
-    click OWL href "https://google.com" "Click for more information"
-
-    %% Semantic Data Modeling specifics - Deeper Level 4
-    Triples["RDF Triples"]
-    SHACL["SHACL - Shapes Constraint Language"]
-    RDF --> Triples
-    OWL --> SHACL
-    style Triples fill:none,stroke:#2ecc71,stroke-width:2px
-    style SHACL fill:none,stroke:#2ecc71,stroke-width:2px
-    click Triples href "https://google.com" "Click for more information"
-    click SHACL href "https://google.com" "Click for more information"
-```
-
-## Another variation
-
-```mermaid
-graph LR
-    %% Main node
-    DM["Data Modeling Approaches"]
-    style DM fill:#ffcb6b,stroke:#333,stroke-width:2px
-    click DM href "https://google.com" "Click for more information"
+    style DM fill:#e5e5e5,stroke:#333,stroke-width:2px
+    click DM href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/05-overview_of_data_modeling_concepts.md" "Click for more information"
 
     %% First level connections
     DM --> RDM
@@ -190,10 +32,10 @@ graph LR
     style GDM fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
     style SDM fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
     style DDM fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px
-    click RDM href "https://google.com" "Click for more information"
-    click GDM href "https://google.com" "Click for more information"
-    click SDM href "https://google.com" "Click for more information"
-    click DDM href "https://google.com" "Click for more information"
+    click RDM href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/10-relational_data_modeling.md" "Click for more information"
+    click GDM href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/20-graph_data_modeling.md" "Click for more information"
+    click SDM href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/30-semantic_data_modeling.md" "Click for more information"
+    click DDM href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/40-json_based_modeling.md" "Click for more information"
 
     %% First level Implementations - Parent Level 2
     Tables["Tables & SQL"]
@@ -205,9 +47,9 @@ graph LR
     style Tables fill:#ffebee,stroke:#d32f2f,stroke-width:2px
     style NodesEdges fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
     style Documents fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px
-    click Tables href "https://google.com" "Click for more information"
-    click NodesEdges href "https://google.com" "Click for more information"
-    click Documents href "https://google.com" "Click for more information"
+    click Tables href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/10-relational_data_modeling.md" "Click for more information"
+    click NodesEdges href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/20-graph_data_modeling.md" "Click for more information"
+    click Documents href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/40-json_based_modeling.md" "Click for more information"
 
     %% Tools and Technologies & Semantic specifics - Parent Level 3
     ERTools["ER Diagram Tools"]
@@ -234,110 +76,26 @@ graph LR
     style RDF fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
     style RDFS fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
     style OWL fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
-    click ERTools href "https://google.com" "Click for more information"
-    click UMLTools href "https://google.com" "Click for more information"
-    click TMFSID href "https://google.com" "Click for more information"
-    click GraphTools href "https://google.com" "Click for more information"
-    click DocumentTools href "https://google.com" "Click for more information"
-    click RDF href "https://google.com" "Click for more information"
-    click RDFS href "https://google.com" "Click for more information"
-    click OWL href "https://google.com" "Click for more information"
+    click ERTools href "https://github.com/kanad13/data_modeling/blob/master/120-data_modeling_tools/10-er_diagram_tools.md" "Click for more information"
+    click UMLTools href "https://github.com/kanad13/data_modeling/blob/master/120-data_modeling_tools/20-uml_tools.md" "Click for more information"
+    click TMFSID href "https://github.com/kanad13/data_modeling/blob/master/200-domain_specific_models/10-tm_forum.md" "Click for more information"
+    click GraphTools href "https://github.com/kanad13/data_modeling/blob/master/120-data_modeling_tools/30-graph_data_modeling_tools.md" "Click for more information"
+    click DocumentTools href "https://github.com/kanad13/data_modeling/blob/master/120-data_modeling_tools/50-json_based_modeling_tools.md" "Click for more information"
+    click RDF href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/31-resource_description_framework.md" "Click for more information"
+    click RDFS href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/32-resource_description_framework_schema.md" "Click for more information"
+    click OWL href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/33-web_ontology_language.md" "Click for more information"
 
     %% Semantic Data Modeling specifics - Deeper Level 4
     Triples["RDF Triples"]
+    RDFSVocabulary["RDFS Vocabulary"]
     SHACL["SHACL - Shapes Constraint Language"]
     RDF --> Triples
+    RDFS --> RDFSVocabulary
     OWL --> SHACL
     style Triples fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style RDFSVocabulary fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
     style SHACL fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
-    click Triples href "https://google.com" "Click for more information"
-    click SHACL href "https://google.com" "Click for more information"
-```
-
-## one more
-
-```mermaid
-graph LR
-    %% Main node
-    DM["Data Modeling Approaches"]
-    style DM fill:none,stroke:#ff8c00,stroke-width:3px
-    click DM href "https://google.com" "Click for more information"
-
-    %% First level connections
-    DM --> RDM
-    DM --> GDM
-    DM --> SDM
-    DM --> DDM
-
-    %% Main approaches - Parent Level 1
-    RDM["Relational Data Modeling"]
-    GDM["Graph Data Modeling"]
-    SDM["Semantic Data Modeling"]
-    DDM["Document-oriented Data Modeling"]
-    style RDM fill:none,stroke:#b71c1c,stroke-width:3px
-    style GDM fill:none,stroke:#0d47a1,stroke-width:3px
-    style SDM fill:none,stroke:#1b5e20,stroke-width:3px
-    style DDM fill:none,stroke:#4a148c,stroke-width:3px
-    click RDM href "https://google.com" "Click for more information"
-    click GDM href "https://google.com" "Click for more information"
-    click SDM href "https://google.com" "Click for more information"
-    click DDM href "https://google.com" "Click for more information"
-
-    %% First level Implementations - Parent Level 2
-    Tables["Tables & SQL"]
-    NodesEdges["Nodes & Edges"]
-    Documents["JSON Documents"]
-    RDM --> Tables
-    GDM --> NodesEdges
-    DDM --> Documents
-    style Tables fill:none,stroke:#b71c1c,stroke-width:3px
-    style NodesEdges fill:none,stroke:#0d47a1,stroke-width:3px
-    style Documents fill:none,stroke:#4a148c,stroke-width:3px
-    click Tables href "https://google.com" "Click for more information"
-    click NodesEdges href "https://google.com" "Click for more information"
-    click Documents href "https://google.com" "Click for more information"
-
-    %% Tools and Technologies & Semantic specifics - Parent Level 3
-    ERTools["ER Diagram Tools"]
-    UMLTools["UML Tools"]
-    TMFSID["TMForum SID"]
-    GraphTools["Graph Database Tools"]
-    DocumentTools["Document DB Tools"]
-    RDF["RDF - Resource Description Framework"]
-    RDFS["RDFS - RDF Schema"]
-    OWL["OWL - Web Ontology Language"]
-    Tables --> ERTools
-    Tables --> UMLTools
-    Tables --> TMFSID
-    NodesEdges --> GraphTools
-    Documents --> DocumentTools
-    SDM --> RDF
-    SDM --> RDFS
-    SDM --> OWL
-    style ERTools fill:none,stroke:#b71c1c,stroke-width:3px
-    style UMLTools fill:none,stroke:#b71c1c,stroke-width:3px
-    style TMFSID fill:none,stroke:#b71c1c,stroke-width:3px
-    style GraphTools fill:none,stroke:#0d47a1,stroke-width:3px
-    style DocumentTools fill:none,stroke:#4a148c,stroke-width:3px
-    style RDF fill:none,stroke:#1b5e20,stroke-width:3px
-    style RDFS fill:none,stroke:#1b5e20,stroke-width:3px
-    style OWL fill:none,stroke:#1b5e20,stroke-width:3px
-    click ERTools href "https://google.com" "Click for more information"
-    click UMLTools href "https://google.com" "Click for more information"
-    click TMFSID href "https://google.com" "Click for more information"
-    click GraphTools href "https://google.com" "Click for more information"
-    click DocumentTools href "https://google.com" "Click for more information"
-    click RDF href "https://google.com" "Click for more information"
-    click RDFS href "https://google.com" "Click for more information"
-    click OWL href "https://google.com" "Click for more information"
-
-    %% Semantic Data Modeling specifics - Deeper Level 4
-    Triples["RDF Triples"]
-    SHACL["SHACL - Shapes Constraint Language"]
-    RDF --> Triples
-    OWL --> SHACL
-    style Triples fill:none,stroke:#1b5e20,stroke-width:3px
-    style SHACL fill:none,stroke:#1b5e20,stroke-width:3px
-    click Triples href "https://google.com" "Click for more information"
-    click SHACL href "https://google.com" "Click for more information"
+    click Triples href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/31-resource_description_framework.md" "Click for more information"
+    click RDFSVocabulary href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/32-resource_description_framework_schema.md" "Click for more information"
+    click SHACL href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/34-shapes_constraint_language.md" "Click for more information"
 ```
