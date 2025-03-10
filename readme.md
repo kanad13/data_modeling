@@ -1,14 +1,24 @@
-# Introduction to Data Modeling
+## What's Data Modeling?
 
-## Overview of the Repository
+- Data is everywhere, but it can quickly become overwhelming.
+- Think of it like exploring a new city. Without a map, you'd be lost, wandering aimlessly.
+- **Data modeling is like creating that map for your data.**
 
-- This repository serves as an introduction to the topic of data modeling.
-- It contains documents that provide insights into various data modeling techniques, tools, and industry standards.
+## What's Inside This Repository?
 
-## Interactive Diagram
+- This repository breaks down data modeling into easy-to-understand, practical steps.
+- You'll discover:
+  - Straightforward explanations of different ways to map your data.
+  - Useful tools you can start using right away.
+  - Real-world examples that show data mapping in action.
+  - Proven patterns to solve common data challenges.
 
-- The chart below provides a visual overview of data modeling approaches.
-- `Click on any node` to learn more about the specific topic.
+## How to Explore
+
+- There are two main ways to navigate this repository:
+
+1. **Visually Explore Sections:** Use the diagram below. Click on any link within the diagram to go directly to that section.
+2. **Learn Sequentially:** Go step-by-step, start with: [Data Modeling Concepts](./100-data_modeling_techniques/05-overview_of_data_modeling_concepts.md). This is a good starting point for beginners.
 
 ```mermaid
 graph LR

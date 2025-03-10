@@ -96,6 +96,16 @@ graph LR
 
 # Introduction to Data Modeling
 
+```mermaid
+graph LR
+    A[Data Modeling] --> B[Data Capture]
+    A --> D[Data Storage Design]
+    D --> F[Data Engineering]
+    B --> F
+    F --> G[Data Storage]
+    G --> H[Reporting & AI/ML]
+```
+
 ## What is Data Modeling?
 
 - **What is it?**
