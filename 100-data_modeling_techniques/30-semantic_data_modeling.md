@@ -26,16 +26,16 @@ graph TD
 
 ## Introduction to Semantic Data Modeling
 
-- **Semantic Web Vision:**
+- **Semantic Web Vision**
   - Aims for data with meaning and context, not just raw information.
   - Semantic web applications understand data meaning and relationships.
   - Can infer new knowledge from existing data.
   - In "Knowledge City" analogy: A city where information systems understand the meaning of everything.
-- **Semantic Web Technologies:**
+- **Semantic Web Technologies**
   - Uses technologies like RDF, OWL, and SPARQL.
   - Employs ontologies (formal definitions of concepts and relationships).
   - Enables machines to process and understand data like humans.
-- **Definition of Ontology:**
+- **Definition of Ontology**
   - Simple definition outside of computer science:
     - A formal representation of
       - knowledge as a set of concepts within a domain, and
@@ -50,7 +50,7 @@ graph TD
     - Here the relationships are
       - "is a type of"
       - "are types of"
-- **Knowledge Graphs?**
+- **Knowledge Graphs**
   - Knowledge graphs represent structured information using subject-predicate-object triples.
   - A subject (an entity) is linked to an object (another entity or a value) through a predicate (the relationship).
   - This format maps out how different pieces of data are interconnected.
@@ -66,16 +66,16 @@ graph TD
   - In this example, the knowledge graph uses an underlying ontology - a formal representation of various entities and their relationships - to define that:
     - "Restaurants" are a type of "Business."
     - "Italian food" is a subtype of "Cuisine."
-- **Illustrative Example:**
-  - **Non-Semantic Approach:**
+- **Illustrative Example**
+  - **Non-Semantic Approach**
     - System knows: "Rome" is a city in "Italy"; "Italy" is a country in "Europe".
     - Query: "What continent is Rome in?" - System cannot answer (relationship not understood).
-  - **Semantic Approach:**
+  - **Semantic Approach**
     - Knowledge Graph: "Rome" `is in` "Italy" `is in` "Europe".
     - Query: "What continent is Rome in?" - System infers and answers "Europe".
     - Uses triples (subject-predicate-object) to represent relationships.
     - Enables inference based on defined relationships.
-- **Evolution of Semantic Approach:**
+- **Evolution of Semantic Approach**
   - Semantic approach has evolved with increasing expressiveness.
   - Each stage adds more capabilities: RDF -> RDFS -> OWL.
   - Like building a "Knowledge City" in layers, starting from basic labeling (RDF) to complex knowledge representation (OWL).
