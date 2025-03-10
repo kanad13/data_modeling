@@ -4,6 +4,15 @@
 - Think of it like exploring a new city. Without a map, you'd be lost, wandering aimlessly.
 - **Data modeling is like creating that map for your data.**
 
+```mermaid
+flowchart LR
+    A["Data Modeling"] --> B["Data Capture"]
+    B --> F["Data Engineering"]
+    F --> G["Data Storage"]
+    G --> H["AI/ML"]
+    style A fill:#ffcb6b,stroke:#333,stroke-width:2px
+```
+
 ## What's Inside This Repository?
 
 - This repository breaks down data modeling into easy-to-understand, practical steps.

@@ -97,13 +97,15 @@ graph LR
 # Introduction to Data Modeling
 
 ```mermaid
-graph LR
-    A[Data Modeling] --> B[Data Capture]
-    A --> D[Data Storage Design]
-    D --> F[Data Engineering]
-    B --> F
-    F --> G[Data Storage]
-    G --> H[Reporting & AI/ML]
+flowchart TD
+    subgraph "Data Lifecycle (simplified)"
+    direction LR
+        A["Data Modeling"] --> B["Data Capture"]
+        B --> F["Data Engineering"]
+        F --> G["Data Storage"]
+        G --> H["AI/ML"]
+        style A fill:#ffcb6b,stroke:#333,stroke-width:2px
+    end
 ```
 
 ## What is Data Modeling?
