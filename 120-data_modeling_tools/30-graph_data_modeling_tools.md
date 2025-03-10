@@ -76,8 +76,8 @@ graph LR
     click GraphTools href "https://github.com/kanad13/data_modeling/blob/master/120-data_modeling_tools/30-graph_data_modeling_tools.md" "Click for more information"
     click DocumentTools href "https://github.com/kanad13/data_modeling/blob/master/120-data_modeling_tools/50-json_based_modeling_tools.md" "Click for more information"
     click RDF href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/31-resource_description_framework.md" "Click for more information"
-    click RDFS href "https://github.com/kanad13/data_modeling/techniques/32-resource_description_framework_schema.md" "Click for more information"
-    click OWL href "https://github.com/kanad13/data_modeling/techniques/33-web_ontology_language.md" "Click for more information"
+    click RDFS href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/32-resource_description_framework_schema.md" "Click for more information"
+    click OWL href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/33-web_ontology_language.md" "Click for more information"
 
     %% Semantic Data Modeling specifics - Deeper Level 4
     Triples["RDF Triples"]
@@ -90,8 +90,8 @@ graph LR
     style RDFSVocabulary fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
     style SHACL fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
     click Triples href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/31-resource_description_framework.md" "Click for more information"
-    click RDFSVocabulary href "https://github.com/kanad13/data_modeling/techniques/32-resource_description_framework_schema.md" "Click for more information"
-    click SHACL href "https://github.com/kanad13/data_modeling/techniques/34-shapes_constraint_language.md" "Click for more information"
+    click RDFSVocabulary href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/32-resource_description_framework_schema.md" "Click for more information"
+    click SHACL href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/34-shapes_constraint_language.md" "Click for more information"
 ```
 
 # Graph Database Tools (For Graph Data Models)
