@@ -1,3 +1,53 @@
+# Introduction to Data Modeling
+
+## Lego Blocks Analogy
+
+- **Think of data modeling like building with LEGO blocks.**
+  - Let's imagine you're building with LEGOs.
+  - You don't just randomly throw bricks together and hope for the best. You usually have an idea in mind - maybe a house, a car, or a spaceship.
+  - You plan out the different parts, how they connect, and what each part will be.
+- **Data modeling is very similar**
+  - But instead of LEGO bricks, we're working with `data` and building `digital systems` like databases, applications, or reports.
+  - In simple terms, data modeling is the process of creating a blueprint for how data will be organized and structured within a system.
+- **Data Modeling is about figuring out**
+  - `What pieces (entities)` we need to build our system.
+  - `What details (attributes)` each piece should have.
+  - `How these pieces fit together (relationships)` to create a complete picture.
+- **Importance of Data Modeling**
+  - Just like a good LEGO plan makes building easier and results in a stronger, more functional creation, good data modeling makes building digital systems:
+    - `Clearer:` Everyone understands the data and how it fits together.
+    - `More Efficient:` Databases are designed logically, making them faster and easier to use.
+    - `Less Error-prone:` By defining rules upfront, we reduce data inconsistencies and mistakes.
+    - `Adaptable:` Well-modeled data is easier to change and update as needs evolve.
+
+## Practical Example - Online Blog
+
+- **Scenario:**
+  - Imagine you're building a blog website.
+  - You need to organize and structure the data for your blog.
+- **Entities (Things):** Identify the main "things" to store:
+  - `Posts:` The blog articles themselves.
+  - `Authors:` The people writing the posts.
+  - `Categories:` The topics for the posts.
+- **Attributes (Details):** We define key information for each:
+  - `Post:` Title, Content, Publication Date, Author, Category.
+  - `Author:` Name, Email.
+  - `Category:` Name.
+- **Relationships (Connections):** We define how they connect:
+  - `Author _writes_ Posts:` One Author can write many Posts.
+  - `Post _belongs to_ Categories:` One Post can be in multiple Categories.
+  - `Category _contains_ Posts:` One Category can have many Posts.
+- **Concise "Data Model" (Conceptual):**
+
+```mermaid
+graph LR
+    A[Author] -->|writes| B(Post)
+    B -->|belongs to| C(Category)
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#ccf,stroke:#333,stroke-width:2px
+    style C fill:#ccf,stroke:#333,stroke-width:2px
+```
+
 # On this page
 
 - **This page serves as an introduction to the topic of DATA MODELING APPROACHES.**
@@ -9,7 +59,7 @@ graph LR
     %% Main node
     DM["Data Modeling Approaches"]
     style DM fill:#ffcb6b,stroke:#333,stroke-width:2px
-    click DM href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/05-overview_of_data_modeling_concepts.md" "Click for more information"
+    click DM href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_approaches/05-overview_of_data_modeling_concepts.md" "Click for more information"
 
     %% First level connections
     DM --> RDM
@@ -26,10 +76,10 @@ graph LR
     style GDM fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
     style SDM fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
     style DDM fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px
-    click RDM href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/10-relational_data_modeling.md" "Click for more information"
-    click GDM href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/20-graph_data_modeling.md" "Click for more information"
-    click SDM href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/30-semantic_data_modeling.md" "Click for more information"
-    click DDM href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/40-json_based_modeling.md" "Click for more information"
+    click RDM href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_approaches/10-relational_data_modeling.md" "Click for more information"
+    click GDM href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_approaches/20-graph_data_modeling.md" "Click for more information"
+    click SDM href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_approaches/30-semantic_data_modeling.md" "Click for more information"
+    click DDM href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_approaches/40-json_based_modeling.md" "Click for more information"
 
     %% First level Implementations - Parent Level 2
     Tables["Tables & SQL"]
@@ -41,9 +91,9 @@ graph LR
     style Tables fill:#ffebee,stroke:#d32f2f,stroke-width:2px
     style NodesEdges fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
     style Documents fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px
-    click Tables href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/10-relational_data_modeling.md" "Click for more information"
-    click NodesEdges href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/20-graph_data_modeling.md" "Click for more information"
-    click Documents href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/40-json_based_modeling.md" "Click for more information"
+    click Tables href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_approaches/10-relational_data_modeling.md" "Click for more information"
+    click NodesEdges href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_approaches/20-graph_data_modeling.md" "Click for more information"
+    click Documents href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_approaches/40-json_based_modeling.md" "Click for more information"
 
     %% Tools and Technologies & Semantic specifics - Parent Level 3
     ERTools["ER Diagram Tools"]
@@ -75,9 +125,9 @@ graph LR
     click TMFSID href "https://github.com/kanad13/data_modeling/blob/master/200-domain_specific_models/10-tm_forum.md" "Click for more information"
     click GraphTools href "https://github.com/kanad13/data_modeling/blob/master/120-data_modeling_tools/30-graph_data_modeling_tools.md" "Click for more information"
     click DocumentTools href "https://github.com/kanad13/data_modeling/blob/master/120-data_modeling_tools/50-json_based_modeling_tools.md" "Click for more information"
-    click RDF href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/31-resource_description_framework.md" "Click for more information"
+    click RDF href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_approaches/31-resource_description_framework.md" "Click for more information"
     click RDFS href "https://github.com/kanad13/data_modeling_techniques/32-resource_description_framework_schema.md" "Click for more information"
-    click OWL href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/33-web_ontology_language.md" "Click for more information"
+    click OWL href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_approaches/33-web_ontology_language.md" "Click for more information"
 
     %% Semantic Data Modeling specifics - Deeper Level 4
     Triples["RDF Triples"]
@@ -89,61 +139,12 @@ graph LR
     style Triples fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
     style RDFSVocabulary fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
     style SHACL fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
-    click Triples href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/31-resource_description_framework.md" "Click for more information"
-    click RDFSVocabulary href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_techniques/32-resource_description_framework_schema.md" "Click for more information"
+    click Triples href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_approaches/31-resource_description_framework.md" "Click for more information"
+    click RDFSVocabulary href "https://github.com/kanad13/data_modeling/blob/master/100-data_modeling_approaches/32-resource_description_framework_schema.md" "Click for more information"
     click SHACL href "https://github.com/kanad13/data_modeling_techniques/34-shapes_constraint_language.md" "Click for more information"
 ```
 
-# Introduction to Data Modeling
-
-```mermaid
-flowchart TD
-    subgraph "Data Lifecycle (simplified)"
-    direction LR
-        A["Data Modeling"] --> B["Data Capture"]
-        B --> F["Data Engineering"]
-        F --> G["Data Storage"]
-        G --> H["AI/ML"]
-        style A fill:#ffcb6b,stroke:#333,stroke-width:2px
-    end
-```
-
-## What is Data Modeling?
-
-- **What is it?**
-  - Process of creating visual, conceptual data representations
-  - Shows data and its relationships in a system
-  - Like a blueprint for data structures
-- **Purpose:**
-  - Organizes and structures data
-  - Enables efficient storage, retrieval, and management
-  - Acts as communication tool
-  - Ensures shared understanding of data
-
-## Why Data Modeling Matters
-
-- **Improved Communication:**
-  - Bridges gap between business and technical teams
-  - Common language for data understanding
-  - Like city plans for coordinating city departments
-- **Enhanced Data Organization:**
-  - Structures data logically for efficiency
-  - Improves data storage and retrieval
-  - Like city zoning for better functionality
-- **Data Quality and Consistency:**
-  - Enforces data integrity through rules and relationships
-  - Leads to consistent, reliable data
-  - Like building codes for construction standards
-- **Foundation for System Development:**
-  - Blueprint for databases and applications
-  - Guides creation of effective data systems
-  - Like city plans for urban development
-- **Business Understanding:**
-  - Helps understand data assets and flow
-  - Supports better decision-making and planning
-  - Like urban analysis for city planners
-
-## Abstraction levels in Data Modeling
+## Abstraction Levels in Data Modeling
 
 ### Conceptual, Logical, and Physical Data Models
 

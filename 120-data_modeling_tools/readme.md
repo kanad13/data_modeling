@@ -7,7 +7,7 @@
 
 ## Pre-read Recommendations
 
-- It is recommended to understand [Data Modeling Techniques](./../100-data_modeling_techniques) first to understand the context of the tools discussed here.
+- It is recommended to understand [Data Modeling Techniques](../100-data_modeling_approaches) first to understand the context of the tools discussed here.
 - Topics covered in that folder are:
   - Relational Data Modeling
   - Graph Data Modeling

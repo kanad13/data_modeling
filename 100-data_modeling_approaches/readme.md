@@ -33,3 +33,17 @@ graph TD
 
     style DM fill:#ffec5c,stroke:#555,stroke-width:2px
 ```
+
+# Data Modeling in Data Lifecycle
+
+```mermaid
+flowchart TD
+    subgraph "Data Lifecycle (simplified)"
+    direction LR
+        A["Data Modeling"] --> B["Data Capture"]
+        B --> F["Data Engineering"]
+        F --> G["Data Storage"]
+        G --> H["AI/ML"]
+        style A fill:#ffcb6b,stroke:#333,stroke-width:2px
+    end
+```
